@@ -26,6 +26,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
 }
 
 .cabecalho__logo__titulo {
@@ -74,17 +75,13 @@ body {
     color: white;
 }
 
-.principal {
-    padding: 10rem 33rem;
-}
-
 .section-cabecalho {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
-    margin: 0 23rem;
+    margin: 10rem 56rem;
 }
 
 .section-cabecalho__sobre-nos {
@@ -107,33 +104,106 @@ body {
     text-align: center;
 }
 
+.metricas {
+    padding: 3rem 33rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.informacoes__numero {
+    font-weight: 600;
+    font-size: 6rem;
+    color: var(--primary-color);
+}
+
+.informacoes__titulo {
+    font-weight: 500;
+    color: var(--texto-dark-color);
+    font-size: 1.8rem;
+}
+
+.informacoes__descricao {
+    color: var(--texto-light-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: start;
+}
+
 @media (max-width: 1705px) {
     .cabecalho{
         padding: 3rem 10rem;
     }
 
-    .principal {
-        padding: 10rem;
+    .section-cabecalho {
+        margin: 10rem 45rem;
     }
 
-    .section-cabecalho {
-        margin: 0 30rem;
+    .metricas {
+        padding: 3rem 10rem;
     }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1500px) {
+    .section-cabecalho {
+        margin: 10rem 35rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-cabecalho {
+        margin: 10rem 25rem;
+    }
+}
+
+@media (max-width: 1100px) {
     .cabecalho__logo {
         display: none;
     }
 
-    .principal {
-        padding: 10rem 0;
-    }
-
     .section-cabecalho {
-        margin: 0 10rem;
+        margin: 10rem 15rem;
     }
 }
+
+@media (max-width: 1000px) {
+    .section-cabecalho {
+        margin: 10rem 5rem;
+    }
+
+    .metricas {
+        padding: 3rem 5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-cabecalho {
+        margin: 10rem 5rem;
+    }
+
+    .metricas {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 10rem;
+        gap: 12rem;
+    }
+
+    .informacoes {
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .informacoes__descricao {
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 830px) {
     .cabecalho {
@@ -141,7 +211,7 @@ body {
     }
     
     .section-cabecalho {
-        margin: 0 4rem;
+        margin: 10rem 4rem;
     }
 }
 
@@ -151,10 +221,9 @@ body {
         gap: 4rem;
     }
 
-    .principal {
-        padding: 8rem 0;
+    .section-cabecalho {
+        margin: 8rem 4rem;
     }
-
 }
 
 @media (max-width: 460px) {
