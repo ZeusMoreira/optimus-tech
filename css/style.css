@@ -4,6 +4,7 @@
     --texto-dark-color: #101828;
     --texto-light-color: #667085;
     --rodape-color: #98A2B3;
+    --border-color: #EAECF0;
 }
 
 html {
@@ -176,6 +177,56 @@ body {
     text-align: center;
 }
 
+.lista-cargos {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    align-self: center;
+    width: 60%;
+}
+
+.cargo {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.cargo__title {
+    font-weight: 500;
+    color: var(--texto-dark-color);
+    font-size: 2rem;
+}
+
+.lista-ocupacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.ocupacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1.6rem;
+    padding: 2.4rem 2.4rem 2.8rem 2.4rem;
+}
+
+.ocupacao__title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--texto-dark-color);
+}
+
+.descricao {
+    display: flex;
+    gap: 2.4rem;
+    color: var(--texto-light-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
 @media (max-width: 1705px) {
     .cabecalho{
         padding: 3rem 10rem;
@@ -204,6 +255,10 @@ body {
     .section-cabecalho {
         padding: 9.6rem 25rem;
     }
+
+    .lista-cargos {
+        width: 70%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -213,6 +268,10 @@ body {
 
     .section-cabecalho {
         padding: 9.6rem 15rem;
+    }
+
+    .lista-cargos {
+        width: 80%;
     }
 }
 
@@ -227,6 +286,10 @@ body {
 
     .vagas {
         padding: 9.6rem 5rem;
+    }
+
+    .lista-cargos {
+        width: 90%;
     }
 }
 
@@ -268,9 +331,11 @@ body {
     .vagas__cabecalho {
         padding: 0;
     }
+
+    .lista-cargos {
+        width: 100%;
+    }
 }
-
-
 
 @media (max-width: 740px) {
     .cabecalho {
