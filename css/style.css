@@ -80,8 +80,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem;
-    margin: 10rem 56rem;
+    gap: 2.4rem;
+    padding: 9.6rem 56rem;
 }
 
 .section-cabecalho__sobre-nos {
@@ -105,10 +105,10 @@ body {
 }
 
 .metricas {
-    padding: 3rem 33rem;
+    padding: 0 33rem 9.6rem 33rem;
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 6.4rem;
 }
 
 .informacoes {
@@ -136,29 +136,73 @@ body {
     text-align: start;
 }
 
+.vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    padding: 9.6rem 33rem;
+}
+
+.vagas__cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    padding: 0 3.2rem;
+}
+
+.vagas__cabecalho__vagas-abertas {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: rgba(142, 36, 36, 0.05);
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.6rem;
+    text-align: center;
+}
+
+.vagas__cabecalho__title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--texto-dark-color);
+    text-align: center;
+}
+
+.vagas__cabecalho__texto {
+    color: var(--texto-light-color);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
 @media (max-width: 1705px) {
     .cabecalho{
         padding: 3rem 10rem;
     }
 
     .section-cabecalho {
-        margin: 10rem 45rem;
+        padding: 9.6rem 45rem;
     }
 
     .metricas {
-        padding: 3rem 10rem;
+        padding: 0 10rem 9.6rem 10rem;
+    }
+
+    .vagas {
+        padding: 9.6rem 10rem;
     }
 }
 
 @media (max-width: 1500px) {
     .section-cabecalho {
-        margin: 10rem 35rem;
+        padding: 9.6rem 35rem;
     }
 }
 
 @media (max-width: 1300px) {
     .section-cabecalho {
-        margin: 10rem 25rem;
+        padding: 9.6rem 25rem;
     }
 }
 
@@ -168,29 +212,33 @@ body {
     }
 
     .section-cabecalho {
-        margin: 10rem 15rem;
+        padding: 9.6rem 15rem;
     }
 }
 
 @media (max-width: 1000px) {
     .section-cabecalho {
-        margin: 10rem 5rem;
+        padding: 9.6rem 5rem;
     }
 
     .metricas {
-        padding: 3rem 5rem;
+        padding: 0 5rem 9.6rem 5rem;
+    }
+
+    .vagas {
+        padding: 9.6rem 5rem;
     }
 }
 
 @media (max-width: 900px) {
     .section-cabecalho {
-        margin: 10rem 5rem;
+        padding: 9.6rem 5rem;
     }
 
     .metricas {
         display: flex;
         flex-direction: column;
-        padding: 3rem 10rem;
+        padding: 0 10rem 9.6rem 10rem;
         gap: 12rem;
     }
 
@@ -211,9 +259,18 @@ body {
     }
     
     .section-cabecalho {
-        margin: 10rem 4rem;
+        padding: 9.6rem 4rem;
     }
 }
+
+
+@media (max-width: 765px) {
+    .vagas__cabecalho {
+        padding: 0;
+    }
+}
+
+
 
 @media (max-width: 740px) {
     .cabecalho {
@@ -222,13 +279,23 @@ body {
     }
 
     .section-cabecalho {
-        margin: 8rem 4rem;
+        padding: 8rem 4rem;
     }
+}
+
+@media (max-width: 700px) {
+    /* .vagas {
+        padding: 9.6rem 2rem;
+    } */
 }
 
 @media (max-width: 460px) {
     .lista {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .vagas {
+        padding: 9.6rem 1rem;
     }
 }
