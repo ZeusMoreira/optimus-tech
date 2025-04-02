@@ -227,6 +227,61 @@ body {
     font-size: 1.6rem;
 }
 
+.depoimento {
+    background-color: rgba(195, 25, 25, 0.03);
+    margin: 0 33rem 9.6rem 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.6rem;
+    gap: 3.2rem;
+    padding: 6.4rem;
+}
+
+.depoimento__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.depoimento__header__title {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.depoimento__header__text {
+    color: var(--texto-dark-color);
+    font-size: 3.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.depoimento__colaborador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.depoimento__colaborador__img {
+    width: 5.6rem;
+    height: 5.6rem;
+}
+
+.depoimento__colaborador__nome {
+    color: var(--texto-dark-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.depoimento__colaborador__cargo {
+    color: var(--texto-light-color);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
 @media (max-width: 1705px) {
     .cabecalho{
         padding: 3rem 10rem;
@@ -238,6 +293,11 @@ body {
 
     .metricas {
         padding: 0 10rem 9.6rem 10rem;
+    }
+
+    .depoimento {
+        margin: 0 10rem 9.6rem 10rem;
+        padding: 6.4rem 18rem;
     }
 
     .vagas {
@@ -259,6 +319,11 @@ body {
     .lista-cargos {
         width: 70%;
     }
+
+    .depoimento {
+        margin: 0 5rem 9.6rem 5rem;
+        padding: 6.4rem 5rem;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -272,6 +337,10 @@ body {
 
     .lista-cargos {
         width: 80%;
+    }
+
+    .depoimento {
+        padding: 6.4rem 3rem;
     }
 }
 
@@ -335,6 +404,30 @@ body {
     .lista-cargos {
         width: 100%;
     }
+
+    .depoimento {
+        padding: 6.4rem 1rem;
+    }
+
+    .depoimento__header__text {
+        color: var(--texto-dark-color);
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .depoimento__header__title {
+        font-size: 1.2rem;
+    }
+
+    .depoimento__colaborador__nome {
+        font-size: 1.4rem;
+    }
+
+    .depoimento__colaborador__cargo {
+        font-size: 1.2rem;
+    }
+    
 }
 
 @media (max-width: 740px) {
